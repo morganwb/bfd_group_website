@@ -14,7 +14,7 @@ We are members of the [Exoweather](http://exoweather.org) team and the [Dedalus 
 
 We benefit tremendously from our work with
 
-* [Baylee Bordwell](https ://www.colorado.edu/aps/baylee-bordwell)
+* [Baylee Bordwell](https://www.colorado.edu/aps/baylee-bordwell)
 * [Ben Brown](https://bpbrown.bitbucket.io/)
 * [Keaton Burns](http://keaton-burns.com/)
 * [Susan Clark](https://www.sns.ias.edu/~seclark/)
