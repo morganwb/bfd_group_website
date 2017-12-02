@@ -3,8 +3,8 @@ date = "2016-07-12T15:52:22+02:00"
 id = "mbancroft"
 interests = ["Astrophysical Fluid Dynamics"]
 name = "Michael Bancroft, '18"
-portrait = "headshots/bancroft.jpg"
-short_bio = "I'm interested in all of it."
+portrait = "headshots/mike.jpg"
+short_bio = ""
 title = "Mike Bancroft"
 
 [[social]]

@@ -3,8 +3,8 @@ date = "2016-07-12T15:52:22+02:00"
 id = "mgoldbe2"
 interests = ["Astrophysical Fluid Dynamics"]
 name = "Matthew Goldberg, '18"
-portrait = ""
-short_bio = "I'm interested in all of it."
+portrait = "headshots/matt.jpg"
+short_bio = ""
 title = "Matt Goldberg"
 
 [[social]]
