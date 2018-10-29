@@ -5,6 +5,7 @@ external_link = ""
 image = ""
 project_id = ""
 short_description = ""
+sort_position= 10
 title = "Magnetohydrodynamics on the Equatorial Beta Plane"
 [[participants]]
     name = "Jeff Oishi"

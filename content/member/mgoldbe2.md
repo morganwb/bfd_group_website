@@ -6,6 +6,7 @@ name = "Matthew Goldberg, '18"
 portrait = "headshots/matt.jpg"
 short_bio = ""
 title = "Matt Goldberg"
+is_former_member = true
 
 [[social]]
     icon = "envelope"
@@ -19,9 +20,10 @@ title = "Matt Goldberg"
 
 [[organizations]]
     name = "Bates College"
-    role = "student"
+    role = "Alum"
 
 +++ 
-Matt hails from Cambridge, MA
+Matt's from Cambridge, MA. 
+
 ### Hobbies
 Ultimate!
