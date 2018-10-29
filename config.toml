@@ -7,22 +7,22 @@ builddrafts = false
 baseurl = "http://bates.edu/"
 canonifyurls = true
 theme = "hugo-academic-group"
-title = "Bates Astrophysical Fluid Dynamics Lab"
+title = "Bates Fluid Dynamics Group"
 math = true
-copyright = "&copy; Jeffrey S. Oishi, 2017; banner image NASA/SWRI/MSSS/Gerald Eichstädt/Seán Doran"
+copyright = "&copy; Jeffrey S. Oishi, 2018; banner image NASA/SWRI/MSSS/Gerald Eichstädt/Seán Doran"
 
 [taxonomies]
 category = "categories"
 tag = "tags"
 
 [params]
-  description = "Bates AFD Lab"
+  description = "Bates Fluids Group"
   author = "Jeffrey S. Oishi"
   email = "joishi@bates.edu"
   address = "Carnegie Science Room 141, Bates College, Lewiston, ME 04140"
 
-  slogan = "Bates Astrophysical Fluid Dynamics Lab"
-  #slogan_text = "Better Science through pretty pictures"
+  slogan = "Bates Fluid Dynamics Group"
+  slogan_text = "Computing complicated fluid dynamics from turbulence to Stokes flow"
 
   # Selected Publications section.
   [params.publications_selected]
@@ -83,6 +83,13 @@ tag = "tags"
       name = "Research"
       url = "/research"
       weight = 2
+      identifier = "research"
+
+  [[menu.main]]
+      name = "Getting Started"
+      url = "/research/getting-started"
+      parent = "research"
+      weight = 3        
       
   [[menu.main]]
       name = "Blog"
@@ -92,11 +99,13 @@ tag = "tags"
   [[menu.main]]
       name = "Publications"
       url = "#publications"
+      parent = "research"
       weight = 4
 
   [[menu.main]]
       name = "Projects"
       url = "#projects"
+      parent = "research"
       weight = 5
 
   [[menu.main]]
