@@ -37,7 +37,7 @@ url_video = ""
 template = Template(temp_str)
 
 app = bt.BibApp()
-searchterms = ['author:Oishi,J','year:[2003 TO 2017]']
+searchterms = ['author:Oishi,J','year:[2017 TO 2018]']
 filterterms = ['database:astronomy']
 
 records = ads._run_ads_search(app,searchterms,filterterms,field_list='abstract,author,bibcode,doi,title,pub,year')
