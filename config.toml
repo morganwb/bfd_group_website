@@ -86,8 +86,14 @@ tag = "tags"
       identifier = "research"
 
   [[menu.main]]
+      name = "Overview"
+      url = "/research"
+      parent = "research"
+      weight = 3        
+
+  [[menu.main]]
       name = "Getting Started"
-      url = "/research/getting-started"
+      url = "/getting-started"
       parent = "research"
       weight = 3        
       
@@ -114,6 +120,11 @@ tag = "tags"
       weight = 6
 
   [[menu.main]]
+      name = "Join Us!"
+      url = "#vacancies"
+      weight = 7
+
+  [[menu.main]]
       name = "Contact"
       url = "#contact"
-      weight = 7
+      weight = 8
