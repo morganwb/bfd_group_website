@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic-group">
+
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://jsoishi.github.io//js/hugo-academic-group.js"></script>
+
+    <link rel="stylesheet" href="https://jsoishi.github.io//css/bootstrap.min.css">
+    <script src="https://jsoishi.github.io//js/bootstrap.min.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    
+    
+    <script src="https://jsoishi.github.io//js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+    <link rel="stylesheet" href="https://jsoishi.github.io//css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://jsoishi.github.io//css/academicons.min.css">
+    <link rel="stylesheet" href="https://jsoishi.github.io//css/biaslab-font.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:100,400,700|Roboto+Mono">
+    <link rel="stylesheet" href="https://jsoishi.github.io//css/hugo-academic-group.css">
+
+    
+
+
+    <link rel="shortcut icon" href="https://jsoishi.github.io//img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://jsoishi.github.io/project/busseannulus/">
+
+    <title>Direct Statistical Simulation for unsteady flows | Bates Fluid Dynamics Group</title>
+
+</head>
+
+<body>
+<div class="home-anchor" id="home"></div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+                
+                
+            </div>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://jsoishi.github.io/#top">Home</a></li>
+                    
+                
+                        
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              
+                                <li><a href="https://jsoishi.github.io//getting-started">Getting Started</a></li>
+                              
+                                <li><a href="https://jsoishi.github.io//research">Overview</a></li>
+                              
+                                <li><a href="https://jsoishi.github.io/#publications">Publications</a></li>
+                              
+                                <li><a href="https://jsoishi.github.io/#projects">Projects</a></li>
+                              
+                            </ul>
+                          </li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://jsoishi.github.io/#posts">Blog</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://jsoishi.github.io/#members">Members</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://jsoishi.github.io/#vacancies">Join Us!</a></li>
+                    
+                
+                    
+                        <li class="nav-item"><a data-scroll href="https://jsoishi.github.io/#contact">Contact</a></li>
+                    
+                
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+
+    <article class="article article-project" itemscope itemtype="http://schema.org/Article">
+        <h1 itemprop="name">Direct Statistical Simulation for unsteady flows</h1>
+        
+        
+
+        
+
+        <div class="article-style" itemprop="articleBody">
+            
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Direct Statistical Simulation is a relatively new and very promising technique for understanding the long-term statistical properties of highly turbulent, anisotropic flow. Anisotropic flow occurs in astrophysical and geophysical contexts in a number of guises: the zonal jets found on Jupiter and Saturn, the mean dynamo-generated magnetic fields on solar-type and fully convective M-dwarfs, and the quasi-biennial oscillation on Earth. DSS has been extensively verified and tested against many problems in atmospheric science \citep{2008JAtS&hellip;65.1955M}, wall-bounded shear flows \citep{2017RSPTA.37560081F}, and the magnetorotational dynamo \citep{2015PhRvL.114h5002S}.</p>
+
+<p>The basic mathematical idea behind DSS is simple: rather than evolve the fluid variables (velocities, magnetic fields, etc), instead one evolves their statistics. These statistics, represented in DSS by cumulants of the flow variables, are typically much smoother than the variables themselves. This means they can be represented with far fewer spatial grid points. In addition, by directly simulating the statistics, one can find variances without having to run a DNS long enough to build up robust correlations.</p>
+
+<p>We are interested in studying a series of instabilities that lead to anisotropic flows. Our prototype problem is the <em>Busse Annulus</em>, a simple model for convection in a rapidly rotating annulus. The annulus considers the duct on the right, a cross section cut from between the two concentric cylinders on the left,</p>
+
+<p><img src="https://jsoishi.github.io/img/busse_diagram.png" width=500px></p>
+
+<p>In order to consier non-axisymmetric effects in the rapidly rotating domain (with rotation rate Ω about z), a small part of the azimuthal direction is retained, while we integrate down the z direction. This leaves us with a two dimensional, Cartesian domain in x and y, representing a small piece of the radial and azimuthal directions, respectively.</p>
+
+<h2 id="methods">Methods</h2>
+
+<p>We&rsquo;ve developed a set of operators for <a href="http://dedalus-project.org/">Dedalus</a> that implement the necessary projections and symmetrizations required for performing these calculations in an efficient manner. Because we are performing <em>zonal averages</em> in order to construct the cumulants, the dimension of each cumulant is different: the first cumulant for a 2D domain is 1D, but the second cumulant is 3D. However, in its current version, Dedalus must have all fields be the same dimension for a given problem. We&rsquo;ve developed a set of operators to project a 1D field stored within a 3D data structure. These operators work for arbitrary bases, allowing us to use the parity (sin/cos) bases best suited to the boundary conditions of the Busse annulus.</p>
+
+<h2 id="project-repository">Project Repository</h2>
+
+<p>Follow along at <a href="https://github.com/jsoishi/busse_annulus">at Github</a>!</p>
+
+<h2 id="external-collaborators">External Collaborators</h2>
+
+<ul>
+<li>Steve Tobias, Leeds</li>
+<li>Brad Marston, Brown</li>
+<li>Keaton Burns, Flatiron Institute</li>
+</ul>
+
+        </div>
+    
+        
+     </article>
+    
+   <nav>
+    <ul class="pager">
+        
+        <li class="previous">
+            <a href="https://jsoishi.github.io/project/barotropicjets/">
+                <span aria-hidden="true" class="darknav">&larr;&nbsp;Previous project:</span>
+                Barotropic Jet Formation on the 2-Sphere using Spin Spherical Harmonics
+            </a>
+        </li>
+        
+
+        
+        <li class="next">
+            <a href="https://jsoishi.github.io/project/complex_fluids_toolkit/">
+                <span class="darknav">&nbsp;Next project:</span>
+                A Complex Fluids Toolkit for Dedalus
+                <span aria-hidden="true" class="darknav">&rarr;</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            &copy; Jeffrey S. Oishi, 2018; banner image NASA/SWRI/MSSS/Gerald Eichstädt/Seán Doran &middot; 
+
+            Partially powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#home" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+</body>
+</html>
+

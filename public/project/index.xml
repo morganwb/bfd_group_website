@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Bates Fluid Dynamics Group</title>
+    <link>https://jsoishi.github.io/project/index.xml</link>
+    <description>Recent content in Projects on Bates Fluid Dynamics Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; Jeffrey S. Oishi, 2018; banner image NASA/SWRI/MSSS/Gerald Eichstädt/Seán Doran</copyright>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jsoishi.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Complex Fluids Toolkit for Dedalus</title>
+      <link>https://jsoishi.github.io/project/complex_fluids_toolkit/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsoishi.github.io/project/complex_fluids_toolkit/</guid>
+      <description>
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Complex fluids, including liquid crystals and those with non-Newtonian rheologies, are extremely important in a wide variety of disciplines, from biological to industrial. We are developing a series of tools to extend the &lt;a href=&#34;http://dedalus-project.org&#34;&gt;Dedalus&lt;/a&gt; to include multiphase flows with varying rheologies.&lt;/p&gt;
+
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+
+&lt;p&gt;We make extensive use of the phase field method to simulate two fluids on the same grid. This idea, sometimes also called the &amp;ldquo;diffusive interface model&amp;rdquo;, assumes that we resolve the interface between the two fluids. By minimizing a properly constructed free energy, the phase field φ includes surface tension and allows us to specify two different fluids with different material properties on the same grid.&lt;/p&gt;
+
+&lt;p&gt;We have developed techniques for viscoelastic Oldroyd-B fluids as well as liquid crystals.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-repository&#34;&gt;Project Repository&lt;/h2&gt;
+
+&lt;p&gt;Coming soon!&lt;/p&gt;
+
+&lt;h2 id=&#34;external-collaborators&#34;&gt;External Collaborators&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jörn Dunkel, MIT&lt;/li&gt;
+&lt;li&gt;Phil Pearce, MIT&lt;/li&gt;
+&lt;li&gt;Dominic Skinner, MIT&lt;/li&gt;
+&lt;li&gt;Knut Drescher, Max Planck Institute for Terrestrial Microbiology&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Direct Statistical Simulation for unsteady flows</title>
+      <link>https://jsoishi.github.io/project/busseannulus/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsoishi.github.io/project/busseannulus/</guid>
+      <description>
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Direct Statistical Simulation is a relatively new and very promising technique for understanding the long-term statistical properties of highly turbulent, anisotropic flow. Anisotropic flow occurs in astrophysical and geophysical contexts in a number of guises: the zonal jets found on Jupiter and Saturn, the mean dynamo-generated magnetic fields on solar-type and fully convective M-dwarfs, and the quasi-biennial oscillation on Earth. DSS has been extensively verified and tested against many problems in atmospheric science \citep{2008JAtS&amp;hellip;65.1955M}, wall-bounded shear flows \citep{2017RSPTA.37560081F}, and the magnetorotational dynamo \citep{2015PhRvL.114h5002S}.&lt;/p&gt;
+
+&lt;p&gt;The basic mathematical idea behind DSS is simple: rather than evolve the fluid variables (velocities, magnetic fields, etc), instead one evolves their statistics. These statistics, represented in DSS by cumulants of the flow variables, are typically much smoother than the variables themselves. This means they can be represented with far fewer spatial grid points. In addition, by directly simulating the statistics, one can find variances without having to run a DNS long enough to build up robust correlations.&lt;/p&gt;
+
+&lt;p&gt;We are interested in studying a series of instabilities that lead to anisotropic flows. Our prototype problem is the &lt;em&gt;Busse Annulus&lt;/em&gt;, a simple model for convection in a rapidly rotating annulus. The annulus considers the duct on the right, a cross section cut from between the two concentric cylinders on the left,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jsoishi.github.io/img/busse_diagram.png&#34; width=500px&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to consier non-axisymmetric effects in the rapidly rotating domain (with rotation rate Ω about z), a small part of the azimuthal direction is retained, while we integrate down the z direction. This leaves us with a two dimensional, Cartesian domain in x and y, representing a small piece of the radial and azimuthal directions, respectively.&lt;/p&gt;
+
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+
+&lt;p&gt;We&amp;rsquo;ve developed a set of operators for &lt;a href=&#34;http://dedalus-project.org/&#34;&gt;Dedalus&lt;/a&gt; that implement the necessary projections and symmetrizations required for performing these calculations in an efficient manner. Because we are performing &lt;em&gt;zonal averages&lt;/em&gt; in order to construct the cumulants, the dimension of each cumulant is different: the first cumulant for a 2D domain is 1D, but the second cumulant is 3D. However, in its current version, Dedalus must have all fields be the same dimension for a given problem. We&amp;rsquo;ve developed a set of operators to project a 1D field stored within a 3D data structure. These operators work for arbitrary bases, allowing us to use the parity (sin/cos) bases best suited to the boundary conditions of the Busse annulus.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-repository&#34;&gt;Project Repository&lt;/h2&gt;
+
+&lt;p&gt;Follow along at &lt;a href=&#34;https://github.com/jsoishi/busse_annulus&#34;&gt;at Github&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&#34;external-collaborators&#34;&gt;External Collaborators&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Steve Tobias, Leeds&lt;/li&gt;
+&lt;li&gt;Brad Marston, Brown&lt;/li&gt;
+&lt;li&gt;Keaton Burns, Flatiron Institute&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Barotropic Jet Formation on the 2-Sphere using Spin Spherical Harmonics</title>
+      <link>https://jsoishi.github.io/project/barotropicjets/</link>
+      <pubDate>Sun, 29 Oct 2017 16:10:22 +0200</pubDate>
+      
+      <guid>https://jsoishi.github.io/project/barotropicjets/</guid>
+      <description>
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://dedalus-project.org&#34;&gt;Dedalus Collaboration&lt;/a&gt; has developed a sparse discretization of vector fields in spherical geometry. Key to this process is the understanding that vector components, as opposed to scalars, do not have the same regularities as the standard spherical harmonics. However, by using a basis that &lt;em&gt;does&lt;/em&gt; have the right regularity, we can construct a sparse matrix solution to differential equations in curvilinear geometries. This basis is the &lt;em&gt;spin-weighted&lt;/em&gt; spherical harmonics, constructed from Jacobi polynomials.&lt;/p&gt;
+
+&lt;p&gt;As a part of his senior thesis, Matt Goldberg constructed a test problem of barotropic jet formation on the 2-Sphere, demonstrating the fidelity of this method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Magnetohydrodynamics on the Equatorial Beta Plane</title>
+      <link>https://jsoishi.github.io/project/mhdbetaplane/</link>
+      <pubDate>Tue, 12 Jul 2016 16:10:22 +0200</pubDate>
+      
+      <guid>https://jsoishi.github.io/project/mhdbetaplane/</guid>
+      <description>
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Motivated by the discovery of &lt;a href=&#34;http://iopscience.iop.org/article/10.1086/592397/meta;jsessionid=5C141B62D2437E6E71FCB12C5CBAB662.ip-10-40-1-105&#34;&gt;active nests of convection&lt;/a&gt; in rapidly rotating stellar simulations, we are interested in constructing a &lt;em&gt;local&lt;/em&gt; model that can reproduce the phenomena. In order to do this, we&amp;rsquo;re investigating the use of the equatorial beta plane.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
