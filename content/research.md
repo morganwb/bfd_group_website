@@ -24,6 +24,6 @@ We benefit tremendously from our work with
 * Katie Manduca
 * [Brad Marston](http://www.brown.edu/Research/bradmarston/Professor_Marston/Welcome.html)
 * [Phil Pearce](http://math.mit.edu/~ppearce/)
-* [Dominic Skinner]()
+* [Dominic Skinner](https://math.mit.edu/directory/profile.php?pid=2038)
 * [Steve Tobias](http://www1.maths.leeds.ac.uk/~smt/)
 * [Geoff Vasil](http://sydney.edu.au/science/people/geoffrey.vasil.php)
