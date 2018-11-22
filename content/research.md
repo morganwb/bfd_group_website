@@ -15,7 +15,7 @@ We are members of the [Dedalus Project](http://dedalus-project.org). Some of our
 We benefit tremendously from our work with
 
 * [Evan Anders](https://www.colorado.edu/aps/evan-anders)
-* [Baylee Bordwell](https://www.colorado.edu/aps/baylee-bordwell)
+* [Jhett Bordwell](https://www.colorado.edu/aps/jhett-bordwell)
 * [Ben Brown](https://bpbrown.bitbucket.io/)
 * [Keaton Burns](http://keaton-burns.com/)
 * [Susan Clark](https://www.sns.ias.edu/~seclark/)
