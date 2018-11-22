@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:jsoishi/jsoishi.github.io.git
 	branch = master
+[submodule "themes/hugo-academic-group"]
+	path = themes/hugo-academic-group
+	url = git@github.com:biaslab/hugo-academic-group.git
