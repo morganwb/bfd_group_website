@@ -86,13 +86,13 @@ tag = "tags"
 
   [[menu.main]]
       name = "Overview"
-      url = "/research"
+      url = "/research/overview"
       parent = "research"
       weight = 3        
 
   [[menu.main]]
       name = "Getting Started"
-      url = "/getting-started"
+      url = "/research/getting_started"
       parent = "research"
       weight = 3        
       
