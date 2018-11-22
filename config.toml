@@ -3,8 +3,7 @@ publishdir = "public"
 static = "/static"
 builddrafts = false
 # Replace this with your website URL
-#baseurl = "http://bates.edu/~joishi"
-baseurl = "http://bates.edu/"
+baseurl = "https://jsoishi.github.io/"
 canonifyurls = true
 theme = "hugo-academic-group"
 title = "Bates Fluid Dynamics Group"
