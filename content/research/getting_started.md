@@ -40,7 +40,7 @@ A great place to start. Search the questions first! Often your question has alre
 
 # Local Bates Computing Resources #
 
-* [Leavitt](leavitt) is our 476 core, 17 node compute cluster. Managed by the Bates High Performance Computing Center, it's where we do most of our smaller runs.
+* [Leavitt]( {{< ref "leavitt.md" >}} ) is our 476 core, 17 node compute cluster. Managed by the Bates High Performance Computing Center, it's where we do most of our smaller runs.
 * `a23637.bates.edu` is our group workstation. It's available via ssh from on campus, and has 256 GB of memory for big data analysis and small runs. If you need an account on it, just ask Jeff.
 
 # Fluid Dynamics #
