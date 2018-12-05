@@ -33,7 +33,7 @@ tag = "tags"
   # Section will only be displayed if there are posts in `content/post/`.
   [params.posts]
     count = 2
-    title = "Blog"
+    title = "News"
     subtitle = ""
     str_all = "More Posts"
     str_read_more = "Read more"
@@ -97,7 +97,7 @@ tag = "tags"
       weight = 3        
       
   [[menu.main]]
-      name = "Blog"
+      name = "News"
       url = "#posts"
       weight = 3
 
