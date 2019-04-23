@@ -60,3 +60,10 @@ Links here are to the Bates Library Catalog record.
 
 * [Physical Fluid Dynamics](http://cbbcat.net/record=b1816114~S19), D. J. Tritton. This was one of my favorites when I was a student.
 
+# Learning MPI #
+
+Dedalus is parallelized using the message passing interface (MPI) via the mpi4py python library. Here are a few resources on learning MPI
+
+* [MPI tutorial](http://mpitutorial.com/) This is a very thorough introduction to MPI using C. 
+* [Parallel Programming with MPI using Python and mpi4py](https://www.youtube.com/playlist?list=PL06051AE8DCFAF4F9) by Jeremy Bejarano. A video series teaching basic MPI concepts using mpi4py.
+
