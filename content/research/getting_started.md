@@ -47,18 +47,22 @@ A great place to start. Search the questions first! Often your question has alre
 
 I'll fill this section out over time, but for now, here are a few resources I've made use of in the past. 
 
-## Online ##
+## General Overviews ##
 The first three are all available from the Bates Library for free as pdfs. 
 
 * [An Introduction to Fluid Dynamics](http://cbbcat.net/record=b5188293), G. K. Batchelor. This is probably the most classic fluid dynamics textbook in English. It's not easy going, but well worth the effort.
 * [Fluid Mechanics](http://farside.ph.utexas.edu/teaching/336L/Fluidhtml/Fluidhtml.html), a free textbook by University of Texas, Austin physics professor Richard Fitzpatrick.
 * [Fluid Dynamics for Physicists](http://cbbcat.net/record=b5185188~S19), T. E. Faber. The first chapter of this book does a very nice job of covering the flavor.
 * [FYFD](https://fyfluiddynamics.com/) will give you tons of inspiration!
+* [Physical Fluid Dynamics](http://cbbcat.net/record=b1816114~S19), D. J. Tritton. This is only available in print at the Bates library. This was one of my favorites when I was a student.
 
-## Print ##
-Links here are to the Bates Library Catalog record.
+## Instability ##
+Understanding how fluid flows become unstable is a key part of our work.  Here are a few references on instability.
 
-* [Physical Fluid Dynamics](http://cbbcat.net/record=b1816114~S19), D. J. Tritton. This was one of my favorites when I was a student.
+* The [National Committee for Fluid Mechanics Films on Flow Instability](https://youtu.be/yutbmcO5g2o) is a good place to start. It lays out what an instability is with several experimental examples. 
+* Prof. V. Shankar's "Introduction to Hydordynamic Stability" course ([lecture notes](http://home.iitk.ac.in/~vshankar/files/VShankar_Stability_Intro.pdf), [video](https://www.youtube.com/watch?v=2BafIxhj3F0)) is a good overview.
+* [An Introduction to Hydrodynamic Stability](https://cbbcat.net/record=b5188328~S19), P.G. Drazin. This is a very good book to get started with, though it presumes a bit of hydrodynamic knowledge. It is available as a PDF to download from the Bates Library.
+
 
 # Learning MPI #
 
