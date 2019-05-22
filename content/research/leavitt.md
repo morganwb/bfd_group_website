@@ -70,7 +70,7 @@ where `run_growth_11.sh` is a bash script that contains this:
 #SBATCH --time=5-0
 #SBATCH --nodes=3
 
-source /home/joishi/build/dedalus_intel_mpi/bin/activate
+conda activate dedalus
 
 date
 mpirun -np 64 python3 bioflow.py runs/growth_11.cfg
