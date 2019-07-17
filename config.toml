@@ -94,7 +94,13 @@ tag = "tags"
       name = "Getting Started"
       url = "/research/getting_started"
       parent = "research"
-      weight = 3        
+      weight = 3
+
+  [[menu.main]]
+      name = "Dedalus Tutorials"
+      url = "/research/dedalus_tutorials"
+      parent = "research"
+      weight = 4
       
   [[menu.main]]
       name = "News"
