@@ -2,7 +2,7 @@
 date = "2016-07-12T15:52:22+02:00"
 id = "mbaxter"
 interests = ["Fluid Dynamics", "Rocket Propulsion"]
-name = "Morgan Baxter, '19"
+name = "Morgan Baxter, '20"
 #portrait = "headshots/"
 short_bio = ""
 title = "Morgan Baxter"
@@ -22,7 +22,7 @@ title = "Morgan Baxter"
     role = "Student"
 
 +++ 
-Morgan will be joining the group in Winter 2019.
+Morgan is working on eigenvalue analysis of the 3D magnetorotational instability.
 
 ### Hobbies
 

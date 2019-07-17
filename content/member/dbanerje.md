@@ -6,6 +6,7 @@ name = "Deveena Banerjee, '20"
 #portrait = "headshots/"
 short_bio = ""
 title = "Deveena Banerjee"
+is_former_member = true
 
 [[social]]
     icon = "envelope"
@@ -19,7 +20,7 @@ title = "Deveena Banerjee"
 
 [[organizations]]
     name = "Bates College"
-    role = "Student"
+    role = "Alum"
 
 +++ 
 Deveena hails from Sacramento, CA. She's interested in magnetohydrodynamic simulations.

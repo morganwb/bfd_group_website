@@ -1,16 +1,17 @@
 +++
 date = "2016-07-12T15:52:22+02:00"
-id = "nosborn"
-interests = ["Computational Science", "Machine Learning"]
-name = "Nick Osborn, '19"
+id = "shuebschmann"
+interests = ["High performance computing", "Raspberry Pi"]
+name = "Sam Huebschmann, '19"
 #portrait = "headshots/"
 short_bio = ""
-title = "Nick Osborn"
+title = "Sam Huebschmann"
+is_former_member = true
 
 [[social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:nosborn@bates.edu"
+    link = "mailto:shuebsch@bates.edu"
 
 [[education]]
     course = "BS, Physics"
@@ -19,10 +20,10 @@ title = "Nick Osborn"
 
 [[organizations]]
     name = "Bates College"
-    role = "Student"
+    role = "Alum"
 
 +++ 
-Nick is interested in machine learning. He will be joining the group to write a senior thesis in Winter 2019.
+Sam completed his senior thesis by building a Raspberry pi "supercomputer."
 
 ### Hobbies
 
