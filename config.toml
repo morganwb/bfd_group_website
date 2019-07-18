@@ -18,7 +18,7 @@ tag = "tags"
   description = "Bates Fluids Group"
   author = "Jeffrey S. Oishi"
   email = "joishi@bates.edu"
-  address = "Carnegie Science Room 141, Bates College, Lewiston, ME 04140"
+  address = "Carnegie Science Room 141, Bates College, Lewiston, ME 04240"
 
   slogan = "Bates Fluid Dynamics Group"
   slogan_text = "Computing complicated fluid dynamics from turbulence to Stokes flow"
