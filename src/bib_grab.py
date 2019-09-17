@@ -3,6 +3,7 @@ import bibtools as bt
 from bibtools import ads
 from pathlib import Path
 from jinja2 import Template
+import re
 
 CONTENTDIR = "../content/publication/"
 content_path = Path(CONTENTDIR)
@@ -37,10 +38,10 @@ url_video = ""
 template = Template(temp_str)
 
 app = bt.BibApp()
-searchterms = ['author:Oishi,J','year:[2017 TO 2018]']
+searchterms = ['author:Oishi,J','year:[2003 TO 2019]']
 filterterms = ['database:astronomy']
 
-records = ads._run_ads_search(app,searchterms,filterterms,field_list='abstract,author,bibcode,doi,title,pub,year')
+records = ads._run_ads_search(app,searchterms,filterterms,field_list='abstract,author,bibcode,doi,title,pub,pubdate')
 for r in records['response']['docs']:
     if 'abstract' in r:
         abstract = r['abstract'].replace('"','\\"')
@@ -54,5 +55,6 @@ for r in records['response']['docs']:
     title = r['title'][0].replace('"','\\"')
     filename = "{}.md".format(r['bibcode'])
     outfile = content_path/filename
-    date = "{}-01-01T00:00:00+00:00".format(int(r['year']))
+    pub_date = re.sub('-00','-01',r['pubdate']) # replace weird zero in day field
+    date = "{:}T00:00:00+00:00".format(r['pubdate'])
     outfile.write_text(template.render(title=title,journal=r['pub'],abstract=abstract,date=date,authors=r['author']))
