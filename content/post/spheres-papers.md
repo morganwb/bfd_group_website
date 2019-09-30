@@ -1,5 +1,5 @@
 +++
-date = "2019-09-14T15:01:00Z"
+date = "2019-09-29T15:01:00Z"
 title = "Papers published!"
 [[authors]]
     name = "Jeffrey S. Oishi"
