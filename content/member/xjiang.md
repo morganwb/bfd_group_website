@@ -3,7 +3,7 @@ date = "2016-07-12T15:52:22+02:00"
 id = "xjiang"
 interests = ["Fluid Dynamics", "High Performance Computing"]
 name = "Alex Jiang, '21"
-#portrait = "headshots/"
+portrait = "headshots/xjiang.jpg"
 short_bio = ""
 title = "Alex Jiang"
 

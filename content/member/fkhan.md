@@ -3,7 +3,7 @@ date = "2016-07-12T15:52:22+02:00"
 id = "fkahn"
 interests = ["Fluid Dynamics", "High Performance Computing"]
 name = "Fahim Khan, '20"
-#portrait = "headshots/"
+portrait = "headshots/fkhan.jpg"
 short_bio = ""
 title = "Fahim Khan"
 
