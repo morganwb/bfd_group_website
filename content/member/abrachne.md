@@ -3,7 +3,7 @@ date = "2016-07-12T15:52:22+02:00"
 id = "abrachne"
 interests = ["Fluid Dynamics", "High Performance Computing"]
 name = "Avi Brach-Neufeld, '20"
-#portrait = "headshots/"
+portrait = "headshots/avi.jpg"
 short_bio = ""
 title = "Avi Brach-Neufeld"
 
