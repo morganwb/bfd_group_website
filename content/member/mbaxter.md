@@ -11,6 +11,11 @@ title = "Morgan Baxter"
     icon = "envelope"
     icon_pack = "fa"
     link = "mailto:mbaxter@bates.edu"
+    
+[[social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "https://github.com/morganwb"
 
 [[education]]
     course = "BS, Physics"
